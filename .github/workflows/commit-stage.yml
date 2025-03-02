@@ -30,6 +30,7 @@ jobs:
         if: success() || failure()
         with:
           sarif_file: ${{steps.scan.outputs.sarif}}
+      - name: Make mvnw executable
+        run: chmod +x mvnw
       - name: Build, unit tests and integration tests
-        run: |
-          chmod +x mvnw ./mvnw clean install
+        run: ./mvnw clean install
