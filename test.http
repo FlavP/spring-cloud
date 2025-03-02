@@ -1,0 +1,23 @@
+###
+POST http://localhost:9001/books
+Content-Type: application/json
+
+{
+  "title": "Northern Lights",
+  "isbn": "1234567891",
+  "price": 9.90
+}
+
+###
+GET http://localhost:9001/books/1234567891
+Content-Type: application/json
+
+###
+POST http://localhost:9001/books
+Content-Type: application/json
+
+{
+"title": "Jon Snow",
+"isbn": "",
+"price": "123ABC456Z"
+}
