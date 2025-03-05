@@ -9,7 +9,26 @@ Content-Type: application/json
 }
 
 ###
+POST http://localhost:9001/books
+Content-Type: application/json
+
+{
+  "title": "Northern Lights",
+  "author": "Niels Nielsen",
+  "isbn": "1234567891",
+  "price": 9.90
+}
+
+###
 GET http://localhost:9001/books/1234567891
+Content-Type: application/json
+
+###
+DELETE http://localhost:9001/books/1234567891
+Content-Type: application/json
+
+###
+GET http://localhost:9001/books
 Content-Type: application/json
 
 ###
@@ -21,3 +40,6 @@ Content-Type: application/json
 "isbn": "",
 "price": "123ABC456Z"
 }
+
+###
+GET http://localhost:9001/
