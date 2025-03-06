@@ -1,0 +1,6 @@
+spring:
+  flyway:
+    enabled: true
+  datasource:
+    url: jdbc:tc:postgresql:17.4:///catalog
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
